@@ -25,7 +25,7 @@ const Register = () => {
       category,
       phoneNo,
       altPhoneNo,
-      transaction,
+      transactionId,
     };
     try {
       setLoading(true);

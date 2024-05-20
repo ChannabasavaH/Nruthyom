@@ -1,28 +1,27 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import express from 'express';
 import mongoose from 'mongoose';
 import Register from './models/registrationSchema.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import dotenv from 'dotenv';
-
-dotenv.config();
-
 
 const app = express();
-
 app.use(express.json());
+const MongoDBURL = process.env.ATLASDB_URL;
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use(express.static(path.join(__dirname, '../Frontend/dist')));
 
-const MongoDBURL = process.env.MongoDBURL;
 
-app.post('/api/register',async(req,res) => {
+
+app.post('/api/register', async (req, res) => {
     try {
         const { collegeName, teamName, category, phoneNo, altPhoneNo, transactionId } = req.body;
-        const newRegisterUser = new Register({ collegeName, teamName, category, phoneNo, altPhoneNo, transactionId});
+        const newRegisterUser = new Register({ collegeName, teamName, category, phoneNo, altPhoneNo, transactionId });
         console.log(newRegisterUser);
         await newRegisterUser.save();
         res.status(200).send("New user registered successfully");
@@ -33,16 +32,16 @@ app.post('/api/register',async(req,res) => {
 });
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname,  '../Frontend/dist' , 'index.html'));
+    res.sendFile(path.join(__dirname, '../Frontend/dist', 'index.html'));
 });
 
 mongoose.connect(MongoDBURL)
-.then(() => {
-    console.log("connected to database")
-    app.listen('8080',(req,res) => {
-        console.log("app is listening on 8080");
+    .then(() => {
+        console.log("connected to database");
+        app.listen('8080', () => {
+            console.log("app is listening on 8080");
+        });
+    })
+    .catch((error) => {
+        console.log(error);
     });
-})
-.catch((error) => {
-    console.log(error);
-});
