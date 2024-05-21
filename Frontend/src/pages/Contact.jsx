@@ -13,12 +13,12 @@ const Contact = () => {
         <div className='flex flex-col justify-center items-center mb-4'>
           <h1>Event Manager</h1>
           <p>Mr. Shashank: 9019331203</p>
-          <p>Mrs. Bindu: 7892344071</p>
+          <p>Miss. Bindu: 7892344071</p>
         </div>
         <div className='flex flex-col justify-center items-center mb-4'>
           <h1>Event Co-Manager</h1>
           <p>Mr. Akash: 7795422212</p>
-          <p>Mrs. Sunita: 8792157192</p>
+          <p>Miss. Sunita: 8792157192</p>
         </div>
         <div className='flex flex-col justify-center items-center mb-4'>
           <h1>Staff Coordinate</h1>
