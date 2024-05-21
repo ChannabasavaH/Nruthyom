@@ -76,7 +76,7 @@ const Register = () => {
           <div className='flex flex-col justify-center items-center'>
             <h1 className='text-xl text-black mb-2'>Pay Through UPI ID or QR Code</h1>
             <p className='text-md text-black'>8722989080prashu@axl</p>
-            <img src={Scanner} alt="Not Found" className='w-[50%] h-96' />
+            <img src={Scanner} alt="Not Found" className='w-[50%] h-60' />
             <p className='text-black text-lg'>Note: While Paying Please Mention Your Team Name.</p>
           </div>
           <div>

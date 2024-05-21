@@ -20,8 +20,8 @@ const Home = () => {
           <p className="text-white text-lg sm:text-xl md:text-2xl m-2 font-medium">First Ever Biggest Inter-College Dance Competition Held In Oxford College.</p>
         </div>
         <div className="relative z-10 flex flex-col justify-center items-center h-full p-4 text-center">
-          <p className="text-white text-xl sm:text-2xl md:text-3xl m-2 font-semibold">To Know More About Event</p>
-          <Link to={'/api/about'} className="text-blue-500 text-md sm:text-lg md:text-xl font-medium">Click Here</Link>
+          <p className="text-white text-xl sm:text-2xl md:text-3xl m-2 font-semibold">To Register</p>
+          <Link to={'/api/register'} className="text-blue-500 text-md sm:text-lg md:text-xl font-medium">Click Here</Link>
           <p className="text-white text-xl sm:text-2xl md:text-3xl m-2 font-medium">Contact of Event Managers</p>
           <Link to={'/api/contact'} className="text-blue-500 text-md sm:text-lg md:text-xl font-medium">Click Here</Link>
         </div>
