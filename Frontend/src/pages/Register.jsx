@@ -5,6 +5,7 @@ import Loader from '../components/Loader'
 import axios from 'axios';
 import { useNavigate } from 'react-router';
 import Scanner from '../assets/WhatsApp Image 2024-05-14 at 16.48.07.jpeg';
+import { useSnackbar } from 'notistack';
 
 const Register = () => {
 
@@ -16,6 +17,7 @@ const Register = () => {
   const [transactionId, setTransactionId] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const { enqueueSnackbar } = useSnackbar();
 
   const saveData = async (event) => {
     event.preventDefault();
@@ -32,9 +34,11 @@ const Register = () => {
       const res = await axios.post('/api/register', data);
       console.log(res);
       console.log("data saved successfully");
+      enqueueSnackbar("You have registered Successfully", {variant: "success"})
       navigate('/');
     } catch (error) {
       console.log(error);
+      enqueueSnackbar("Please Register Again", {variant: "error"})
     } finally {
       setLoading(false);
     }
