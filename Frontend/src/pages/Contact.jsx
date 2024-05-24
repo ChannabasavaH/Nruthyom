@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import OxfordLogo from '../assets/oxford pNG TRANS.png'
 
 const Contact = () => {
   return (
@@ -18,7 +19,7 @@ const Contact = () => {
         <div className='flex flex-col justify-center items-center mb-4'>
           <h1>Event Co-Manager</h1>
           <p>Mr. Akash: 7795422212</p>
-          <p>Miss. Sunita: 8792157192</p>
+          <p>Miss. Asma: 9353503637</p>
         </div>
         <div className='flex flex-col justify-center items-center mb-4'>
           <h1>Staff Coordinate</h1>
@@ -27,6 +28,11 @@ const Contact = () => {
       </div>
       <div className='mt-2'>
         <Footer />
+      </div>
+      <div className='mt-2 flex justify-center items-center'>
+        <a href="https://oxfordcollege.edu.in/">
+          <img src={OxfordLogo} alt="Not found" className='w-32' />
+        </a> 
       </div>
     </div>
   )

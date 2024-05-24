@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import Loader from '../components/Loader'
 import axios from 'axios';
 import { useNavigate } from 'react-router';
-import Scanner from '../assets/WhatsApp Image 2024-05-14 at 16.48.07.jpeg';
+import Scanner from '../assets/QR_1716372664.png';
 import { useSnackbar } from 'notistack';
 
 const Register = () => {
