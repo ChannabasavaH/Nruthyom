@@ -9,9 +9,8 @@ import { useSnackbar } from 'notistack';
 
 const Register = () => {
 
-  const [collegeName, setCollegeName] = useState('');
-  const [teamName, setTeamName] = useState('');
-  const [category, setCategory] = useState('');
+  const [danceClassName, setDanceClassName] = useState('');
+  const [danceClassAddress, setDanceClassAddress] = useState('');
   const [phoneNo, setPhoneNo] = useState('');
   const [altPhoneNo, setAltPhoneNo] = useState('');
   const [transactionId, setTransactionId] = useState('');
@@ -22,9 +21,8 @@ const Register = () => {
   const saveData = async (event) => {
     event.preventDefault();
     const data = {
-      collegeName,
-      teamName,
-      category,
+      danceClassName,
+      danceClassAddress,
       phoneNo,
       altPhoneNo,
       transactionId,
@@ -54,12 +52,12 @@ const Register = () => {
       <div className='flex justify-center items-center border-blue-500'>
         <form onSubmit={saveData} className='w-full border-2 border-sky-500 p-4 m-4 rounded-md md:w-1/2 lg:w-1/3'>
           <div>
-            <label htmlFor="collegeName" className='text-xl font-lobster flex flex-col'>College Name</label>
-            <input type="text" placeholder='Enter College Name' id='collegeName' name='collegeName' value={collegeName} onChange={(event) => { setCollegeName(event.target.value) }} className='w-full p-2 m-2 border-black rounded-md' required/>
+            <label htmlFor="danceClassName" className='text-xl font-lobster flex flex-col'>Dance Class Name</label>
+            <input type="text" placeholder='Enter Dance Class Name' id='danceClassName' name='danceClassName' value={danceClassName} onChange={(event) => { setDanceClassName(event.target.value) }} className='w-full p-2 m-2 border-black rounded-md' required/>
           </div>
           <div>
-            <label htmlFor="teamName" className='text-xl font-lobster flex flex-col'>Team Name</label>
-            <input type="text" placeholder='Enter Team Name' id='teamName' name='teamName' value={teamName} onChange={(event) => { setTeamName(event.target.value) }} className='w-full p-2 m-2 border-black rounded-md' required />
+            <label htmlFor="danceClassAddress" className='text-xl font-lobster flex flex-col'>Dance Class Address</label>
+            <input type="text" placeholder='Enter your dance class address' id='danceClassAddress' name='danceClassAddress' value={danceClassAddress} onChange={(event) => { setDanceClassAddress(event.target.value) }} className='w-full p-2 m-2 border-black rounded-md' required />
           </div>
           <div>
             <label htmlFor="phoneNo" className='text-xl font-lobster flex flex-col'>Phone Number</label>
@@ -69,19 +67,11 @@ const Register = () => {
             <label htmlFor="altPhoneNo" className='text-xl font-lobster flex flex-col'>Alternate Phone Number</label>
             <input type="text" placeholder='Enter Alternate Phone Number' id='altPhoneNo' name='altPhoneNo' value={altPhoneNo} onChange={(event) => { setAltPhoneNo(event.target.value) }} className='w-full p-2 m-2 border-black rounded-md' required pattern="\d{10}" title="Alternate phone number must be 10 digits"/>
           </div>
-          <div>
-            <label htmlFor="choice" className='text-xl font-lobster flex flex-col'>Select an option</label>
-            <select name="choice" id="choice" value={category} onChange={(event) => { setCategory(event.target.value) }} className='w-full p-2 m-2 border-black rounded-md' required>
-              <option value=''>Select an Option</option>
-              <option value="Solo Dance">Solo Dance</option>
-              <option value='Group Dance'>Group Dance</option>
-            </select>
-          </div>
           <div className='flex flex-col justify-center items-center'>
             <h1 className='text-xl text-black mb-2'>Pay Through UPI ID or QR Code</h1>
             <p className='text-md text-black'>8722989080prashu@axl</p>
             <img src={Scanner} alt="Not Found" className='w-[50%] h-60' />
-            <p className='text-black text-lg'>Note: While Paying Please Mention Your Team Name.</p>
+            <p className='text-black text-lg'>Note: While Paying Please Mention Your Dance Class Name.</p>
           </div>
           <div>
             <label htmlFor="transaction" className='text-xl font-lobster flex flex-col'>Transaction Id</label>

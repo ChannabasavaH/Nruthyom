@@ -20,8 +20,8 @@ app.use(express.static(path.join(__dirname, '../Frontend/dist')));
 
 app.post('/api/register', async (req, res) => {
     try {
-        const { collegeName, teamName, category, phoneNo, altPhoneNo, transactionId } = req.body;
-        const newRegisterUser = new Register({ collegeName, teamName, category, phoneNo, altPhoneNo, transactionId });
+        const { danceClassName, danceClassAddress, phoneNo, altPhoneNo, transactionId } = req.body;
+        const newRegisterUser = new Register({ danceClassName, danceClassAddress, phoneNo, altPhoneNo, transactionId });
         console.log(newRegisterUser);
         await newRegisterUser.save();
         res.status(200).send("New user registered successfully");
