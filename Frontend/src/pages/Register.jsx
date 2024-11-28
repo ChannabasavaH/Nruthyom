@@ -4,13 +4,13 @@ import Footer from '../components/Footer'
 import Loader from '../components/Loader'
 import axios from 'axios';
 import { useNavigate } from 'react-router';
-import Scanner from '../assets/QR_1716372664.png';
+import Scanner from '../assets/PhonePe_QR.jpeg';
 import { useSnackbar } from 'notistack';
 
 const Register = () => {
 
-  const [danceClassName, setDanceClassName] = useState('');
-  const [danceClassAddress, setDanceClassAddress] = useState('');
+  const [collegeName, setCollegeName] = useState('');
+  const [category, setCategory] = useState('');
   const [phoneNo, setPhoneNo] = useState('');
   const [altPhoneNo, setAltPhoneNo] = useState('');
   const [transactionId, setTransactionId] = useState('');
@@ -21,8 +21,8 @@ const Register = () => {
   const saveData = async (event) => {
     event.preventDefault();
     const data = {
-      danceClassName,
-      danceClassAddress,
+      collegeName,
+      category,
       phoneNo,
       altPhoneNo,
       transactionId,
@@ -52,12 +52,12 @@ const Register = () => {
       <div className='flex justify-center items-center border-blue-500'>
         <form onSubmit={saveData} className='w-full border-2 border-sky-500 p-4 m-4 rounded-md md:w-1/2 lg:w-1/3'>
           <div>
-            <label htmlFor="danceClassName" className='text-xl font-lobster flex flex-col'>Dance Class Name</label>
-            <input type="text" placeholder='Enter Dance Class Name' id='danceClassName' name='danceClassName' value={danceClassName} onChange={(event) => { setDanceClassName(event.target.value) }} className='w-full p-2 m-2 border-black rounded-md' required/>
+            <label htmlFor="collegeName" className='text-xl font-lobster flex flex-col'>College Name</label>
+            <input type="text" placeholder='Enter College Name' id='collegeName' name='collegeName' value={collegeName} onChange={(event) => { setCollegeName(event.target.value) }} className='w-full p-2 m-2 border-black rounded-md' required/>
           </div>
           <div>
-            <label htmlFor="danceClassAddress" className='text-xl font-lobster flex flex-col'>Dance Class Address</label>
-            <input type="text" placeholder='Enter your dance class address' id='danceClassAddress' name='danceClassAddress' value={danceClassAddress} onChange={(event) => { setDanceClassAddress(event.target.value) }} className='w-full p-2 m-2 border-black rounded-md' required />
+            <label htmlFor="category" className='text-xl font-lobster flex flex-col'>Group or Solo</label>
+            <input type="text" placeholder='Group or Solo' id='category' name='category' value={category} onChange={(event) => { setCategory(event.target.value) }} className='w-full p-2 m-2 border-black rounded-md' required />
           </div>
           <div>
             <label htmlFor="phoneNo" className='text-xl font-lobster flex flex-col'>Phone Number</label>
@@ -69,9 +69,9 @@ const Register = () => {
           </div>
           <div className='flex flex-col justify-center items-center'>
             <h1 className='text-xl text-black mb-2'>Pay Through UPI ID or QR Code</h1>
-            <p className='text-md text-black'>8722989080prashu@axl</p>
+            <p className='text-md text-black'>8722989080-2@axl</p>
             <img src={Scanner} alt="Not Found" className='w-[50%] h-60' />
-            <p className='text-black text-lg'>Note: While Paying Please Mention Your Dance Class Name.</p>
+            <p className='text-black text-lg'>Note: While Paying Please Mention Your College Name.</p>
           </div>
           <div>
             <label htmlFor="transaction" className='text-xl font-lobster flex flex-col'>Transaction Id</label>

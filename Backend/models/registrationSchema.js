@@ -1,11 +1,11 @@
 import mongoose, { Schema } from 'mongoose';
 
 const registrationSchema = new Schema({
-    danceClassName: {
+    collegeName: {
         type: String,
         required: true,
     },
-    danceClassAddress: {
+    category: {
         type: String,
         required: true,
     },

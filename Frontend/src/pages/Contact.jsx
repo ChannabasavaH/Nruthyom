@@ -24,10 +24,10 @@ const Contact = () => {
           <div className='flex flex-col justify-center items-center mb-4 text-white'>
             <h1>Event Co-Manager</h1>
             <p>Mr. Akash: 7795422212</p>
-            <p>Miss. Asma: 9353503637</p>
+            <p>Miss. Snehitha: 7019326256</p>
           </div>
           <div className='flex flex-col justify-center items-center mb-4 text-white'>
-            <h1>Staff Coordinate</h1>
+            <h1>Cultural Coordinator</h1>
             <p>Prof. Khushi Singala: 9739203111</p>
           </div>
           <div className='mt-2 flex justify-center items-center'>
