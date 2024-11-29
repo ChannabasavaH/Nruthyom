@@ -17,18 +17,21 @@ const Contact = () => {
         <div className='flex flex-col justify-center items-center'>
           <h1 className='text-2xl font-semibold m-2 text-white'>Contact Information</h1>
           <div className='flex flex-col justify-center items-center mb-4 text-white'>
-            <h1>Event Manager</h1>
-            <p>Mr. Shashank: 9019331203</p>
-            <p>Miss. Bindu: 7892344071</p>
+            <h1>Chairman</h1>
+            <p>Shri Vasant B Horatti</p>
           </div>
           <div className='flex flex-col justify-center items-center mb-4 text-white'>
-            <h1>Event Co-Manager</h1>
-            <p>Mr. Akash: 7795422212</p>
-            <p>Miss. Snehitha: 7019326256</p>
+            <h1>Principal</h1>
+            <p>Prof. Manjunath Muttalgeri</p>
           </div>
           <div className='flex flex-col justify-center items-center mb-4 text-white'>
-            <h1>Cultural Coordinator</h1>
-            <p>Prof. Khushi Singala: 9739203111</p>
+            <h1>Student Event Co-Ordinator</h1>
+            <p>Mr. Jitendra Reddy: 6363851732</p>
+            <p>Mr. Akash Hiremath: 7795422212</p>
+          </div>
+          <div className='flex flex-col justify-center items-center mb-4 text-white'>
+            <h1>Faculty Event Co-Ordinator</h1>
+            <p>Prof. Khushi Singala: 8549001111</p>
           </div>
           <div className='mt-2 flex justify-center items-center'>
             <a href="https://oxfordcollege.edu.in/">
