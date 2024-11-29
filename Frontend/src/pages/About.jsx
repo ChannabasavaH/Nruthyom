@@ -23,9 +23,9 @@ const About = () => {
         </p>
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold opacity-80 my-2 text-white">Registration Information:</h2>
         <p className="p-2 text-lg md:text-xl lg:text-2xl my-2 mx-4 list-disc md:mx-8 lg:mx-16 text-white">Deadline: [Dec -14]</p>
-        <p className="p-1 text-lg md:text-xl lg:text-2xl my-2 mx-4 list-disc md:mx-8 lg:mx-16 text-white">Entry Fee:</p>
-        <p className="p-1 text-lg md:text-xl lg:text-2xl my-2 mx-4 list-disc md:mx-8 lg:mx-16 text-white">Group 500/-</p>
-        <p className="p-1 text-lg md:text-xl lg:text-2xl my-2 mx-4 list-disc md:mx-8 lg:mx-16 text-white">Solo 300/-:</p>
+        <p className="px-2 text-lg md:text-xl lg:text-2xl my-2 mx-4 list-disc md:mx-8 lg:mx-16 text-white">Entry Fee:</p>
+        <p className="px-2 text-lg md:text-xl lg:text-2xl my-2 mx-4 list-disc md:mx-8 lg:mx-16 text-white">Group 500/-</p>
+        <p className="px-2 text-lg md:text-xl lg:text-2xl my-2 mx-4 list-disc md:mx-8 lg:mx-16 text-white">Solo 300/-:</p>
         <p className="p-2 text-lg md:text-xl lg:text-2xl my-2 mx-4 list-disc md:mx-8 lg:mx-16 text-white">
           Join us for a thrilling celebration of dance, talent, and creativity. Don't miss out on the chance to compete and win amazing prizes!
         </p>
@@ -42,16 +42,16 @@ const About = () => {
           <li className='m-1 font-semibold'>Last Date of Registration and music to be submitted on or before 14th december.</li>
           <li className='m-1 font-semibold'>Group:
             <ul>
-              <li className='m-1 font-semibold'>1st Prize: 3000/- with Throphy</li>
-              <li className='m-1 font-semibold'>2nd Prize: Throphy</li>
-              <li className='m-1 font-semibold'>3rd Prize: Throphy</li>
+              <li className='m-1 font-semibold'>1st Prize: 3000/- with Trophy</li>
+              <li className='m-1 font-semibold'>2nd Prize: Trophy</li>
+              <li className='m-1 font-semibold'>3rd Prize: Trophy</li>
             </ul>
           </li>
           <li className='m-1 font-semibold'>Solo:
           <ul>
-              <li className='m-1 font-semibold'>1st Prize: 2000/- with Throphy</li>
-              <li className='m-1 font-semibold'>2nd Prize: Throphy</li>
-              <li className='m-1 font-semibold'>3rd Prize: Throphy</li>
+              <li className='m-1 font-semibold'>1st Prize: 2000/- with Trophy</li>
+              <li className='m-1 font-semibold'>2nd Prize: Trophy</li>
+              <li className='m-1 font-semibold'>3rd Prize: Trophy</li>
             </ul>
           </li>
           <li className='m-1 font-semibold'>College ID Cards are mandatory.</li>
