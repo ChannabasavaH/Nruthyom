@@ -23,7 +23,21 @@ const About = () => {
           <li className='m-1 font-semibold'>Duration of performance must be, maximum of 5 minutes.</li>
           <li className='m-1 font-semibold'>No color, fire and water act allowed.</li>
           <li className='m-1 font-semibold'>Last Date of Registration and music to be submitted on or before 14th december.</li>
-          <li className='m-1 font-semibold'>1st,2nd and 3rd trophies will be issued.</li>
+          <li className='m-1 font-semibold'>Group:
+            <ul>
+              <li className='m-1 font-semibold'>1st Prize: 3000/- with Throphy</li>
+              <li className='m-1 font-semibold'>2nd Prize: Throphy</li>
+              <li className='m-1 font-semibold'>3rd Prize: Throphy</li>
+            </ul>
+          </li>
+          <li className='m-1 font-semibold'>Solo:
+          <ul>
+              <li className='m-1 font-semibold'>1st Prize: 2000/- with Throphy</li>
+              <li className='m-1 font-semibold'>2nd Prize: Throphy</li>
+              <li className='m-1 font-semibold'>3rd Prize: Throphy</li>
+            </ul>
+          </li>
+          <li className='m-1 font-semibold'>College ID Cards are mandatory.</li>
         </ol>
         <Link to="/" className="text-blue-500 hover:underline mb-2">Back to Home</Link>
       </div>
